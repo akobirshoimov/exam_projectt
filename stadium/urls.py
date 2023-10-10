@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import (CreateFieldView,ListFieldView,DetailFieldView,UpdateFieldView,DeleteFieldsView,
-                    CreateBronView,ListBronView,DetailBronView,UpdateBronView,DeleteBronView)
+                    CreateBronView,ListBronView,DetailBronView,UpdateBronView,DeleteBronView,UnbronTimeView)
 
 urlpatterns = [
     # Field urls
@@ -14,6 +14,7 @@ urlpatterns = [
     path('allBron/',ListBronView.as_view()),
     path('detailBron/<int:pk>',DetailBronView.as_view()),
     path('updateBron/<int:pk>/',UpdateBronView.as_view()),
-    path('deleteBron/<int:pk>/',DeleteBronView.as_view())
+    path('deleteBron/<int:pk>/',DeleteBronView.as_view()),
+    path('unbrontime/<str()>/',UnbronTimeView.as_view())
     
 ]
