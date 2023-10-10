@@ -1,4 +1,4 @@
-reatedreatedfrom django.urls import path
+from django.urls import path
 from .views import (CreateFieldView,ListFieldView,DetailFieldView,UpdateFieldView,DeleteFieldsView,
                     CreateBronView,ListBronView,DetailBronView,UpdateBronView,DeleteBronView,UnbronTimeView)
 
