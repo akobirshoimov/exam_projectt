@@ -20,6 +20,7 @@ class BronModel(models.Model):
     day = models.DateField(default=date.today)
     start_time = models.CharField(default=datetime.now) 
     end_time = models.CharField(default=datetime.now) 
+    unbron_time = models.CharField(max_length=100,default=' ')
     field = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self) -> str:
