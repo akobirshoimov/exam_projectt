@@ -39,6 +39,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
+    'modeltranslation',
+    'config',
     'account',
     'stadium',
     'django.contrib.admin',
@@ -68,6 +70,7 @@ REST_FRAMEWORK = {
     
 }
 
+AUTH_USER_MODEL = 'account.CustomUser'
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
@@ -132,6 +135,16 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('uz', 'Uzbek'),
+    ('ru', 'Russian')
+)
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+
+MODELTRANSLATION_TRANSLATION_REGISTRY = 'config.translation'
 
 
 # Static files (CSS, JavaScript, Images)
