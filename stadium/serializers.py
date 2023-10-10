@@ -7,7 +7,7 @@ class FieldsSerializers(ModelSerializer):
         fields = ('__all__')
 
 
-class BronSerialozers(ModelSerializer):
+class BronSerializers(ModelSerializer):
     class Meta:
         model = BronModel
         fields = ('__all_')
