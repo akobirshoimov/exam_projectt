@@ -18,8 +18,8 @@ class FieldsModel(models.Model):
 
 class BronModel(models.Model):
     day = models.DateField(default=date.today)
-    start_time = models.DateTimeField(default=datetime.now) 
-    end_time = models.DateTimeField(default=datetime.now) 
+    start_time = models.CharField(default=datetime.now) 
+    end_time = models.CharField(default=datetime.now) 
     field = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self) -> str:
