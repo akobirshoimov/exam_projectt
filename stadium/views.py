@@ -65,7 +65,7 @@ class DeleteBronView(generics.DestroyAPIView):
     permission_classes = (IsAuthenticated,AdminOrOwnerPermissionClass)
 
     
-Bron qilinmagan vaqtlarni olish
+# Bron qilinmagan vaqtlarni olish
 
 class UnbronTimeView(APIView):
     def get(self,request):
