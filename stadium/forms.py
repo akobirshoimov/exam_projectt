@@ -11,7 +11,6 @@ class FieldsForm(forms.ModelForm):
     field_adress_en=forms.CharField()
     field_adress_ru=forms.CharField()    
 
-
     class Meta:
         model=FieldsModel
-        exclude=('field_name', )
+        exclude=('field_name', 'field_adress')
