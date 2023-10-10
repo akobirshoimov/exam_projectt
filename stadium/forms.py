@@ -14,4 +14,4 @@ class FieldsForm(forms.ModelForm):
 
     class Meta:
         model=FieldsModel
-        exclude=('field_name', )
+        exclude=('field_name', 'field_adress')
