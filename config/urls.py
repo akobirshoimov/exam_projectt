@@ -30,5 +30,5 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('api/Library/', include('Library.urls'))
+    path('api/stadium/', include('stadium.urls'))
 )
